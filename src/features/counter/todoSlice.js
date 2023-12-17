@@ -3,7 +3,7 @@ import { createSlice , nanoid } from "@reduxjs/toolkit";
 export const todoSlice = createSlice({
   name: "todo",
   initialState: {
-    todos: [{ id: 1 , text: "hello",completed: false},],
+    todos: [{ id: 1 , text: "hello lorem",completed: false},],
   },
   reducers: {
     addTodo: (state,action)=>{
@@ -14,9 +14,13 @@ export const todoSlice = createSlice({
         };
         state.todos.push(todo);
     },
+    toggleComplete: (state,action)=>{
+      state.todos.map((todo)=> todo.id==action.payload ? todo.completed = !todo.completed : todo)
+    }
+
   },
 });
 
-export const { addTodo } = todoSlice.actions;
+export const { addTodo,toggleComplete} = todoSlice.actions;
 
 export default todoSlice.reducer
