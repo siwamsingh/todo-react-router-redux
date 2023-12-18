@@ -6,7 +6,7 @@ import store from "./app/store";
 import { Provider } from "react-redux";
 
 import Layout from "./routes/Layout.jsx";
-import MainList from './components/mainList/mainList'
+import MainList from './components/mainList/MainList'
 import AddList from './components/addList/AddList'
 import EditList from './components/editList/EditList'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
