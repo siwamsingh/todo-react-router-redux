@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { addTodo } from "../../features/counter/todoSlice";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export default function AddList() {
   const [text, setText] = useState("");
   const dispatch = useDispatch();
+
+  const navigate = useNavigate();
+
   const addTask = () => {
     dispatch(addTodo(text));
     setText("");
+    navigate(-1);
   };
   return (
     <div className="flex bg-red-500 justify-center h-full">
@@ -20,9 +25,10 @@ export default function AddList() {
           maxLength="300"
           cols="30"
           rows="10"
-          className="border h-96 border-black resize-none "
+          className="border h-96 border-black resize-none p-2"
           value={text}
           onChange={(e) => setText(e.target.value)}
+          autoFocus="autofocus"
         ></textarea>
         <button className=" border-2 border-black " onClick={addTask}>
           Add

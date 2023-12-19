@@ -49,7 +49,7 @@ export default function EditList() {
           </button>
         </div>
         <textarea
-          maxLength="220"
+          maxLength="300"
           cols="30"
           rows="10"
           value={text}

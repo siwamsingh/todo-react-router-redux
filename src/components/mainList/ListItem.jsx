@@ -16,9 +16,9 @@ export default function ListItem({ todo }) {
           onChange={() => dispatch(toggleComplete(todo.id))}
         />
         <Link
-          className="border border-black flex items-center w-full h-14 my-4 text-xl overflow-hidden  whitespace-nowrap px-3"
+          className={`border-2 ${todo.searchedFor ? "border-red-500" : "border-black"} flex items-center w-full h-14 my-4 text-xl overflow-hidden  whitespace-nowrap px-3`}
           to={`edit/`}
-          state= {{todo}}
+          state={{ todo }}
         >
           <span className="truncate ">{todo.text}</span>
         </Link>
