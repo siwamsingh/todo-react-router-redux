@@ -28,9 +28,12 @@ export const todoSlice = createSlice({
         }
       });
     },
+    deleteTodo: (state,action)=>{
+      state.todos = state.todos.filter((todo)=>todo.id!==action.payload);
+    },
   },
 });
 
-export const { addTodo, toggleComplete , editText } = todoSlice.actions;
+export const { addTodo, toggleComplete , editText ,deleteTodo} = todoSlice.actions;
 
 export default todoSlice.reducer;
