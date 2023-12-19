@@ -8,7 +8,7 @@ export default function ListItem({ todo }) {
 
   return (
     <>
-      <div className="flex w-full mx-2">
+      <div className="flex w-full ">
         <input
           type="checkbox"
           className=" mx-4 "
@@ -16,7 +16,7 @@ export default function ListItem({ todo }) {
           onChange={() => dispatch(toggleComplete(todo.id))}
         />
         <Link
-          className={`border-2 ${todo.searchedFor ? "border-red-500" : "border-black"} flex items-center w-full h-14 my-4 text-xl overflow-hidden  whitespace-nowrap px-3`}
+          className={`border-2 border-gray-900 rounded-3xl ${todo.searchedFor ? "border-red-500" : "border-black"} flex items-center w-full h-14 my-4 text-xl overflow-hidden bg-gray-700 whitespace-nowrap pr-3 pl-5`}
           to={`edit/`}
           state={{ todo }}
         >
