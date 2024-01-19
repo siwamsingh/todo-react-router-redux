@@ -39,7 +39,7 @@ export default function AddList() {
        
         <button className=" shadow-xl hover:bg-purple-950 transition ease-in-out duration-300
              p-1 px-[1.77rem] sm:px-[2.2rem]  rounded-full scale-150 bg-purple-700
-            text-gray-200  mx-auto mt-5 mb-2 text-xl sm:text-2xl  font-semibold"
+            text-gray-200  mx-auto mt-6 mb-2 text-xl sm:text-2xl  font-semibold"
              onClick={addTask}>
           <span className="addWords"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
