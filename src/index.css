@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.CustomFont1 {
+  font-family: 'Libre_Baskerville'
+}
+
+@font-face {
+    font-family:'Creepster';
+    src: url(../GoogleFonts/Creepster/Creepster-Regular.ttf)
+   }
+   @font-face {
+    font-family:'DM_Serif_Display';
+    src: url(../GoogleFonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf)
+   }
+   @font-face {
+    font-family:'';
+    src: url(../GoogleFonts/Itim/Itim-Regular.ttf)
+   }
+   @font-face {
+    font-family:'Kranky';
+    src: url(../GoogleFonts/Kranky/Kranky-Regular.ttf)
+   }
+   @font-face {
+    font-family:'Libre_Baskerville';
+    src: url(../GoogleFonts/Libre_Baskerville/LibreBaskerville-Regular.ttf)
+   }
+   @font-face {
+    font-family:'PT_Serif';
+    src: url(../GoogleFonts/PT_Serif/PTSerif-Regular.ttf)
+   }
+   @font-face {
+    font-family:'Rye';
+    src: url(../GoogleFonts/Rye/Rye-Regular.ttf)
+   }
+  @font-face {
+   font-family:'black_ops_one';
+    src: url(../GoogleFonts/Black_Ops_One/BlackOpsOne-Regular.ttf)
+   }
+  @font-face {
+   font-family:'Caprasimo';
+    src: url(../GoogleFonts/Caprasimo/Caprasimo-Regular.ttf)
+   }
+  

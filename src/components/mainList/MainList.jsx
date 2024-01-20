@@ -27,7 +27,7 @@ export default function MainList() {
           />
         </div>
       </div>
-      <div className="w-full sm:w-2/3 md:w-1/2 px-6 py-3  bg-gray-900 rounded-2xl  mx-auto  ">
+      <div className="CustomFont1 w-full sm:w-2/3 md:w-1/2 px-6 py-3  bg-gray-900 rounded-2xl  mx-auto  ">
         <div className=" bg-gray-800 text-white  pr-3 overflow-auto h-96 ">
           {todos.map((todo) => {
             return (

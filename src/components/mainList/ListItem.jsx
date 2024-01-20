@@ -11,7 +11,7 @@ export default function ListItem({ todo }) {
       <div className="flex w-full ">
         <input
           type="checkbox"
-          className=" mx-4 "
+          className="CustomFont1 mx-4 "
           checked={todo.completed}
           onChange={() => dispatch(toggleComplete(todo.id))}
         />
